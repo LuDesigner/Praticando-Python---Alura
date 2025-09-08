@@ -27,7 +27,8 @@ def main():
 
     if peso <= 0 or altura <= 0:
         print("\nErro: peso e altura devem ser maiores que zero.")
-        recursos.reinicializar()
+        input("Pressione Enter para reiniciar...")
+        main()
 
     else:   
         if calculo_de_IMC <= 18.5:
