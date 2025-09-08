@@ -1,8 +1,9 @@
+import menu_principal
 import os
 import sys
 
 
-def atividade():
+def texto_inicial():
     print(
         """
     Camila está organizando um projeto e precisa calcular o tempo total necessário para concluir três atividades: A, B e C. 
@@ -27,7 +28,7 @@ def reinicializar():
     reinicializar = input("Digite 's' para sim ou 'n' para não: ").lower()
     if reinicializar == "s":
         os.system("cls" if os.name == "nt" else "clear")
-        main()
+        menu_principal.menu()
 
     else:
         print("Programa encerrado. Até a próxima!")
@@ -35,6 +36,9 @@ def reinicializar():
 
 
 def main():
+    os.system("cls" if os.name == "nt" else "clear")
+    texto_inicial()
+
     atividade_a = int(input("Digite o tempo da atividade A: "))
     atividade_b = int(input("Digite o tempo da atividade B: "))
     atividade_c = int(input("Digite o tempo da atividade C: "))
@@ -47,9 +51,10 @@ def main():
         print(f"\nO tempo total do projeto é de {total_dias} dias.")
 
         atividades = [
-        ("Atividade A", atividade_a),
-        ("Atividade B", atividade_b),
-        ("Atividade C", atividade_c)]
+            ("Atividade A", atividade_a),
+            ("Atividade B", atividade_b),
+            ("Atividade C", atividade_c),
+        ]
 
         atividades.sort(key=lambda x: x[1], reverse=True)
 
@@ -62,5 +67,4 @@ def main():
 
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
-    atividade()
     main()
