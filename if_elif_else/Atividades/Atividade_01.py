@@ -1,6 +1,6 @@
 import recursos.reinicializar as recursos
 import os
-import sys
+
 
 def texto_inicial():
     print(
@@ -14,6 +14,7 @@ def texto_inicial():
 
     """
     )
+
 
 def main():
     os.system("cls" if os.name == "nt" else "clear")

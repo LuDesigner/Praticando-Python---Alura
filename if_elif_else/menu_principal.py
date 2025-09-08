@@ -1,5 +1,13 @@
-import Atividade_01
-import Atividade_02
+import Atividades.Atividade_01 as Atividade_01
+import Atividades.Atividade_02 as Atividade_02
+import Atividades.Atividade_03 as Atividade_03
+import Atividades.Atividade_04 as Atividade_04
+import Atividades.Atividade_05 as Atividade_05
+import Atividades.Atividade_06 as Atividade_06
+import Atividades.Atividade_07 as Atividade_07
+import Atividades.Atividade_08 as Atividade_08
+import Atividades.Atividade_09 as Atividade_09
+import Atividades.Atividade_10 as Atividade_10
 
 import os
 import sys
@@ -9,28 +17,32 @@ def texto():
         """
 ------------------------------------------------------
         Bem-vindo ao menu de atividades!
-------------------------------------------------------
-
+-----------------------------------------------------
           1 - Atividade 01
           2 - Atividade 02
-
+          3 - Atividade 03
+          4 - Atividade 04
+          5 - Atividade 05
+          6 - Atividade 06
+          7 - Atividade 07
+          8 - Atividade 08
+          9 - Atividade 09
+          10 - Atividade 10
+          0 - Sair
     """
     )
 
 def menu():
     texto()
     resposta_usuario = int(input("Digite a atividade que deseja: "))
-    print("""
-          1 - Atividade 01
-          2 - Atividade 02
-          """)
 
     if resposta_usuario == 1:
         Atividade_01.main()
     elif resposta_usuario == 2:
         Atividade_02.main()
     else:
-        pass
+        print("Programa encerrado. Até a próxima!")
+        sys.exit()
      
 
 if __name__ == "__main__":
