@@ -15,9 +15,9 @@ def atividade():
 def reinicializar():
     print("""
           \n
-    -------------------------------------------------
+-----------------------------------------------------------
     Vamos reiniciar o programa para uma nova análise?
-    -------------------------------------------------
+-----------------------------------------------------------
     """)
     reinicializar = input("Digite 's' para sim ou 'n' para não: ").lower()
     if reinicializar == 's':
