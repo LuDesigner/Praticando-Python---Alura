@@ -6,33 +6,24 @@ def main():
     os.system("cls" if os.name == "nt" else "clear")
     print(
         """
-    Lucas trabalha em TI e precisa garantir que a temperatura de uma sala de servidores não ultrapasse 25°C. Ele quer um programa que receba a temperatura atual como entrada e, se necessário, exiba uma mensagem de alerta.
+    Lucas trabalha em TI e precisa garantir que a temperatura de uma sala de servidores não ultrapasse 25°C. 
+    Ele quer um programa que receba a temperatura atual como entrada e, se necessário, exiba uma mensagem de alerta.
 
     """
     )
 
-    atividade_a = int(input("Digite o tempo da atividade A: "))
-    atividade_b = int(input("Digite o tempo da atividade B: "))
-    atividade_c = int(input("Digite o tempo da atividade C: "))
+    temperatura = int(input("Digite a quantidade de maças vendidas: "))
 
-    if atividade_a < 0 or atividade_b < 0 or atividade_c < 0:
-        print(f"\n Os dias não podem ser negativos.")
+    if macas > bananas:
+        print(f"\nAs maças tiveram venda {macas} a mais que as bananas {bananas}.")
+        recursos.reinicializar()
+    elif bananas > macas:
+        print(f"\nAs bananas tiveram venda {bananas} a mais que as bananas {macas}.")
         recursos.reinicializar()
     else:
-        total_dias = atividade_a + atividade_b + atividade_c
-        print(f"\nO tempo total do projeto é de {total_dias} dias.")
+        print(f"\nHouve empate nas vendas de bananas ({bananas}) e maças ({macas}) .")
+        recursos.reinicializar()
 
-        atividades = [
-            ("Atividade A", atividade_a),
-            ("Atividade B", atividade_b),
-            ("Atividade C", atividade_c),
-        ]
-
-        atividades.sort(key=lambda x: x[1], reverse=True)
-
-        print("Atividades em ordem de dias:")
-        for nome, dias in atividades:
-            print(f"{nome} = {dias} dias")
 
         recursos.reinicializar()
 
