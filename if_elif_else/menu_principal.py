@@ -12,6 +12,7 @@ import Atividades.Atividade_10 as Atividade_10
 import os
 import sys
 
+
 def texto():
     print(
         """
@@ -32,6 +33,7 @@ def texto():
     """
     )
 
+
 def menu():
     texto()
     resposta_usuario = int(input("Digite a atividade que deseja: "))
@@ -40,10 +42,12 @@ def menu():
         Atividade_01.main()
     elif resposta_usuario == 2:
         Atividade_02.main()
+    elif resposta_usuario == 3:
+        Atividade_03.main()
     else:
         print("Programa encerrado. Até a próxima!")
         sys.exit()
-     
+
 
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
