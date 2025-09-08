@@ -1,7 +1,6 @@
-import menu_principal
+import recursos.reinicializar as recursos
 import os
 import sys
-
 
 def texto_inicial():
     print(
@@ -16,26 +15,6 @@ def texto_inicial():
     """
     )
 
-
-def reinicializar():
-    print(
-        """
-          \n
------------------------------------------------------------
-    Vamos reiniciar o programa para uma nova análise?
------------------------------------------------------------
-    """
-    )
-    reinicializar = input("Digite 's' para sim ou 'n' para não: ").lower()
-    if reinicializar == "s":
-        os.system("cls" if os.name == "nt" else "clear")
-        menu_principal.menu()
-
-    else:
-        print("Programa encerrado. Até a próxima!")
-        sys.exit()
-
-
 def main():
     os.system("cls" if os.name == "nt" else "clear")
     texto_inicial()
@@ -45,13 +24,13 @@ def main():
 
     if macas > bananas:
         print(f"\nAs maças tiveram venda {macas} a mais que as bananas {bananas}.")
-        reinicializar()
+        recursos.reinicializar()
     elif bananas > macas:
         print(f"\nAs bananas tiveram venda {bananas} a mais que as bananas {macas}.")
-        reinicializar()
+        recursos.reinicializar()
     else:
         print(f"\nHouve empate nas vendas de bananas ({bananas}) e maças ({macas}) .")
-        reinicializar()
+        recursos.reinicializar()
 
 
 if __name__ == "__main__":
