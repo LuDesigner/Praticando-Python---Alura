@@ -23,6 +23,7 @@ def reinicializar():
     if reinicializar == 's':
         os.system('cls' if os.name == 'nt' else 'clear')
         main()
+
     else:
         print("Programa encerrado. Até a próxima!")
         sys.exit()
@@ -33,10 +34,14 @@ def main():
 
     if macas > bananas:
         print(f"\nAs maças tiveram venda {macas} a mais que as bananas {bananas}.")
+        reinicializar()
     elif bananas > macas:
         print(f"\nAs bananas tiveram venda {bananas} a mais que as bananas {macas}.")
+        reinicializar()
     else:
         print(f"\nHouve empate nas vendas de bananas ({bananas}) e maças ({macas}) .")
+        reinicializar()
+
 
 if __name__ == "__main__":
     os.system('cls' if os.name == 'nt' else 'clear')
