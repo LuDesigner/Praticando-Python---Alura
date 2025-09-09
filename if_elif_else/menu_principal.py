@@ -52,6 +52,12 @@ def menu():
         Atividade_06.main()
     elif resposta_usuario == 7:
         Atividade_07.main()
+    elif resposta_usuario == 8:
+        Atividade_08.main()
+    elif resposta_usuario == 9:
+        Atividade_09.main()
+    elif resposta_usuario == 10:
+        Atividade_10.main()
     else:
         print("Programa encerrado. Até a próxima!")
         sys.exit()
