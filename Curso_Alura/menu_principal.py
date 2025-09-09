@@ -9,7 +9,8 @@ import if_elif_else.Atividade_08 as Atividade_08
 import if_elif_else.Atividade_09 as Atividade_09
 import if_elif_else.Atividade_10 as Atividade_10
 
-import for_e_while.Atividade_01 as Atividade_01
+import for_e_while.Ativ_for_01 as Ativ_for_01
+import for_e_while.Ativ_for_02 as Ativ_for_02
 
 import os
 import sys
@@ -99,9 +100,9 @@ def menu_for():
     resposta_usuario = int(input("Digite a atividade que deseja: "))
 
     if resposta_usuario == 1:
-        Atividade_01.main()
+        Ativ_for_01.main()
     elif resposta_usuario == 2:
-        pass
+        Ativ_for_02.main()
     elif resposta_usuario == 3:
         pass
     elif resposta_usuario == 4:
