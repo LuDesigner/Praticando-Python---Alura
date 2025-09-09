@@ -17,17 +17,10 @@ def main():
 
     """)
 
-    nota_1_str = input("Digite qual a nota da primeira prova: ")
-    nota_1_str = nota_1_str.replace(",", ".")
-    nota_1 = float(nota_1_str)
 
-    nota_2_str = input("Digite qual a nota da segunda prova:")
-    nota_2_str = nota_2_str.replace(",", ".")
-    nota_2 = float(nota_2_str)
-
-    nota_3_str = input("Digite qual a nota da terceira prova: ")
-    nota_3_str = nota_3_str.replace(",", ".")
-    nota_3 = float(nota_3_str)
+    nota_1 = ler_nota("\nDigite a nota da primeira prova: ")
+    nota_2 = ler_nota("\nDigite a nota da segunda prova: ")
+    nota_3 = ler_nota("\nDigite a nota da terceira prova: ")
 
     calculo_da_nota = (nota_1 + nota_2 + nota_3) /3
 
@@ -42,6 +35,19 @@ def main():
     else:
         print(f"\nO aluno esta aprovado com {calculo_da_nota:.2f} da média.")
         recursos.reinicializar()
+
+def ler_nota(mensagem):
+    while True:
+        nota_str = input(mensagem)
+        nota_str = nota_str.replace(",", ".")  # permite vírgula como separador decimal
+        try:
+            nota = float(nota_str)
+            if nota < 0 or nota > 10:
+                print("\nErro: a nota deve estar entre 0 e 10.")
+            else:
+                return nota
+        except ValueError:
+            print("\nErro: digite apenas números válidos (exemplo: 7,5 ou 8.0).")
 
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
