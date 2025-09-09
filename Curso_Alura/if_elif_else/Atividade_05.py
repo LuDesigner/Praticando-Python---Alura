@@ -13,6 +13,7 @@ def texto_inicial():
     """
     )
 
+
 def main():
     os.system("cls" if os.name == "nt" else "clear")
     texto_inicial()
@@ -25,11 +26,16 @@ def main():
         print(f"\nO orçamento de carlos esse mês foi negativo: R$ {orcamento:.2f}.")
         recursos.reinicializar()
     elif 0 <= orcamento <= 2999.99:
-        print(f"\nO orçamento de carlos esse mês foi abaixo do esperado: R$ {orcamento:.2f}.")
+        print(
+            f"\nO orçamento de carlos esse mês foi abaixo do esperado: R$ {orcamento:.2f}."
+        )
         recursos.reinicializar()
     else:
-        print(f"\nO orçamento de carlos esse mês foi acima do esperado: R$ {orcamento:.2f}.")
+        print(
+            f"\nO orçamento de carlos esse mês foi acima do esperado: R$ {orcamento:.2f}."
+        )
         recursos.reinicializar()
+
 
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")

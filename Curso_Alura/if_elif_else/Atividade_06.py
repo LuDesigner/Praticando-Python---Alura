@@ -34,12 +34,12 @@ def main():
         else:
             print("\nAcesso negado. O escritório está fechado no momento.")
             recursos.reinicializar()
-    
+
     except (ValueError, IndexError):
-        print("Erro: digite no formato correto HH:MM (ex: 09:30)." \
-        "")
+        print("Erro: digite no formato correto HH:MM (ex: 09:30)." "")
         input("Pressione Enter para reiniciar...")
         main()
+
 
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")

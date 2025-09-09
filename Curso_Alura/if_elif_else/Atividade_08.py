@@ -1,9 +1,10 @@
 import recursos.reinicializar as recursos
 import os
 
+
 def main():
     os.system("cls" if os.name == "nt" else "clear")
-    
+
     print(
         """
     Fernanda está planejando uma viagem e quer calcular quanto pagará de pedágio. 
@@ -34,6 +35,7 @@ def main():
     else:
         print(f"\nOs kms percorridos estão em {km:.2f} - Preço do pedágio = R$ 30,00.")
         recursos.reinicializar()
+
 
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")

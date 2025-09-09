@@ -1,10 +1,11 @@
 import recursos.reinicializar as recursos
 import os
 
+
 def main():
     os.system("cls" if os.name == "nt" else "clear")
     print(
-    """
+        """
     Anna Júlia está criando um sistema para calcular o Índice de Massa Corporal (IMC) e fornecer recomendações básicas. 
 
     O programa deve receber o peso e a altura de uma pessoa e exibir o valor do IMC, além de indicar se está abaixo do peso, com peso normal ou acima do peso. 
@@ -13,7 +14,8 @@ def main():
 
     Depois, exiba o valor do IMC e uma mensagem indicando se está abaixo do peso (IMC < 18.5), peso normal (18.5 <= IMC < 25) ou acima do peso (IMC >= 25).
 
-    """)
+    """
+    )
 
     peso_str = input("Digite qual o peso em kg: ")
     peso_str = peso_str.replace(",", ".")
@@ -23,14 +25,14 @@ def main():
     altura_str = altura_str.replace(",", ".")
     altura = float(altura_str)
 
-    calculo_de_IMC = peso / (altura ** 2)
+    calculo_de_IMC = peso / (altura**2)
 
     if peso <= 0 or altura <= 0:
         print("\nErro: peso e altura devem ser maiores que zero.")
         input("Pressione Enter para reiniciar...")
         main()
 
-    else:   
+    else:
         if calculo_de_IMC <= 18.5:
             print(f"\nO paciente está abaixo do peso - {calculo_de_IMC:.2f}kg/m².")
             recursos.reinicializar()
@@ -42,6 +44,7 @@ def main():
         elif calculo_de_IMC >= 25:
             print(f"\nO paciente está acima do peso - {calculo_de_IMC:.2f}kg/m².")
             recursos.reinicializar()
+
 
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
