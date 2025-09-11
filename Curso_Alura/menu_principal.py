@@ -11,6 +11,11 @@ import if_elif_else.Atividade_10 as Atividade_10
 
 import for_e_while.Ativ_for_01 as Ativ_for_01
 import for_e_while.Ativ_for_02 as Ativ_for_02
+import for_e_while.Ativ_for_03 as Ativ_for_03
+import for_e_while.Ativ_for_04 as Ativ_for_04
+import for_e_while.Ativ_for_05 as Ativ_for_05
+import for_e_while.Ativ_for_06 as Ativ_for_06
+import for_e_while.Ativ_for_07 as Ativ_for_07
 
 import os
 import sys
@@ -104,15 +109,15 @@ def menu_for():
     elif resposta_usuario == 2:
         Ativ_for_02.main()
     elif resposta_usuario == 3:
-        pass
+        Ativ_for_03.main()
     elif resposta_usuario == 4:
-        pass
+        Ativ_for_04.main()
     elif resposta_usuario == 5:
-        pass
+        Ativ_for_05.main()
     elif resposta_usuario == 6:
-        pass
+        Ativ_for_06.main()
     elif resposta_usuario == 7:
-        pass
+        Ativ_for_07.main()
     elif resposta_usuario == 8:
         pass
     elif resposta_usuario == 9:
