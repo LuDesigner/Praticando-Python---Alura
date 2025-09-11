@@ -126,7 +126,7 @@ def menu_for():
     elif resposta_usuario == 9:
         Ativ_for_09.main()
     elif resposta_usuario == 10:
-        #Ativ_for_10.main()
+        Ativ_for_10.main()
         pass
     else:
         print("Programa encerrado. Até a próxima!")
