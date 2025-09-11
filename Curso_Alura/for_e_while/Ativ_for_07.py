@@ -19,7 +19,7 @@ def main():
 
     while True:
         try:
-            numero = int(input("Digiteo número de vendas: "))
+            numero = int(input("Digite o número de vendas: "))
             if numero <= 0:
                 print("Digite um número positivo.")
             elif numero >= 11:
@@ -34,7 +34,7 @@ def main():
     contador = 0
 
     while contador < numero:
-        print(f"Estoque restante: { 5 - contador}")
+        print(f"Estoque restante: { numero - contador}")
         contador += 1
     
     print("Estoque esgotado")

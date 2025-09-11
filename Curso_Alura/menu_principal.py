@@ -16,6 +16,9 @@ import for_e_while.Ativ_for_04 as Ativ_for_04
 import for_e_while.Ativ_for_05 as Ativ_for_05
 import for_e_while.Ativ_for_06 as Ativ_for_06
 import for_e_while.Ativ_for_07 as Ativ_for_07
+import for_e_while.Ativ_for_08 as Ativ_for_08
+import for_e_while.Ativ_for_09 as Ativ_for_09
+import for_e_while.Ativ_for_10 as Ativ_for_10
 
 import os
 import sys
@@ -119,10 +122,11 @@ def menu_for():
     elif resposta_usuario == 7:
         Ativ_for_07.main()
     elif resposta_usuario == 8:
-        pass
+        Ativ_for_08.main()
     elif resposta_usuario == 9:
-        pass
+        Ativ_for_09.main()
     elif resposta_usuario == 10:
+        #Ativ_for_10.main()
         pass
     else:
         print("Programa encerrado. Até a próxima!")
