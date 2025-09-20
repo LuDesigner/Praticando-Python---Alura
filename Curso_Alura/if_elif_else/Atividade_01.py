@@ -1,8 +1,9 @@
 import recursos.reinicializar as recursos
 import os
 
+def main():
+    os.system("cls" if os.name == "nt" else "clear")
 
-def texto_inicial():
     print(
         """
     Bruno gerencia um pequeno comércio e quer saber qual produto teve o melhor desempenho de vendas no mês passado. 
@@ -14,11 +15,6 @@ def texto_inicial():
 
     """
     )
-
-
-def main():
-    os.system("cls" if os.name == "nt" else "clear")
-    texto_inicial()
 
     macas = int(input("Digite a quantidade de maças vendidas: "))
     bananas = int(input("Digite a quantidade de bananas vendidas: "))

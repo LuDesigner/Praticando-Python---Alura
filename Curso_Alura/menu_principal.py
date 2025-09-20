@@ -20,6 +20,19 @@ import for_e_while.Ativ_for_08 as Ativ_for_08
 import for_e_while.Ativ_for_09 as Ativ_for_09
 import for_e_while.Ativ_for_10 as Ativ_for_10
 
+import String_e_Regex.Ativ_String_01 as Ativ_String_01
+import String_e_Regex.Ativ_String_02 as Ativ_String_02
+import String_e_Regex.Ativ_String_03 as Ativ_String_03
+import String_e_Regex.Ativ_String_04 as Ativ_String_04
+import String_e_Regex.Ativ_String_05 as Ativ_String_05
+import String_e_Regex.Ativ_String_06 as Ativ_String_06
+import String_e_Regex.Ativ_String_07 as Ativ_String_07
+import String_e_Regex.Ativ_String_08 as Ativ_String_08
+import String_e_Regex.Ativ_String_09 as Ativ_String_09
+import String_e_Regex.Ativ_String_10 as Ativ_String_10
+
+import listas_e_tupas.Ativ_lt_01 as Ativ_lt_01
+
 import os
 import sys
 
@@ -32,6 +45,8 @@ def menu_inicial():
 -----------------------------------------------------
           1 - Atividade - If, Elif e Else
           2 - Atividade - For e While
+          3 - Atividade - String e Regex
+          4 - Atividade - Listas e Tupas
 
           0 - Sair
     """
@@ -45,6 +60,12 @@ def menu_inicial():
     elif resposta_usuario == 2:
         texto()
         menu_for()
+    elif resposta_usuario == 3:
+        texto()
+        menu_string_e_regex()
+    elif resposta_usuario == 4:
+        texto()
+        menu_listas_e_tupas()
     else:
         print("Programa encerrado. Até a próxima!")
         sys.exit()
@@ -70,6 +91,64 @@ def texto():
           0 - Sair
     """
     )
+
+# Listas e Tupas
+def menu_listas_e_tupas():
+    texto()
+    resposta_usuario = int(input("Digite a atividade que deseja: "))
+
+    if resposta_usuario == 1:
+        Ativ_lt_01.main()
+    if resposta_usuario == 2:
+        pass
+    if resposta_usuario == 3:
+        pass
+    if resposta_usuario == 4:
+        pass
+    if resposta_usuario == 5:
+        pass
+    if resposta_usuario == 6:
+        pass
+    if resposta_usuario == 7:
+        pass
+    if resposta_usuario == 8:
+        pass
+    if resposta_usuario == 9:
+        pass
+    if resposta_usuario == 10:
+        pass
+    else:
+        print("Programa encerrado. Até a próxima!")
+        sys.exit()
+
+# Menu String e Regex
+def menu_string_e_regex():
+    texto()
+    resposta_usuario = int(input("Digite a atividade que deseja: "))
+
+    if resposta_usuario == 1:
+        Ativ_String_01.main()
+    if resposta_usuario == 2:
+        Ativ_String_02.main()
+    if resposta_usuario == 3:
+        Ativ_String_03.main()
+    if resposta_usuario == 4:
+        Ativ_String_04.main()
+    if resposta_usuario == 5:
+        Ativ_String_05.main()
+    if resposta_usuario == 6:
+        Ativ_String_06.main()
+    if resposta_usuario == 7:
+        Ativ_String_07.main()
+    if resposta_usuario == 8:
+        Ativ_String_08.main()
+    if resposta_usuario == 9:
+        Ativ_String_09.main()
+    if resposta_usuario == 10:
+        Ativ_String_10.main()
+    else:
+        print("Programa encerrado. Até a próxima!")
+        sys.exit()
 
 
 # Menu If, Elif e Else

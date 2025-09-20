@@ -1,8 +1,9 @@
 import recursos.reinicializar as recursos
 import os
 
+def main():
+    os.system("cls" if os.name == "nt" else "clear")
 
-def texto_inicial():
     print(
         """
     Carlos quer monitorar seu orçamento mensal para evitar gastos excessivos. 
@@ -12,11 +13,6 @@ def texto_inicial():
 
     """
     )
-
-
-def main():
-    os.system("cls" if os.name == "nt" else "clear")
-    texto_inicial()
 
     orcamento_str = input("Digite quanto que Carlos gastou no mês atual: ")
     orcamento_str = orcamento_str.replace(",", ".")

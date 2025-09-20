@@ -1,8 +1,9 @@
 import recursos.reinicializar as recursos
 import os
 
+def main():
+    os.system("cls" if os.name == "nt" else "clear")
 
-def texto_inicial():
     print(
         """
     Mariana é responsável por liberar o acesso ao escritório e precisa de um programa que verifique se os funcionários podem entrar. 
@@ -13,11 +14,6 @@ def texto_inicial():
 
     """
     )
-
-
-def main():
-    os.system("cls" if os.name == "nt" else "clear")
-    texto_inicial()
 
     hora_str = input("Deja bem vindo, para acessar por favor, digite a hora atual: ")
 
